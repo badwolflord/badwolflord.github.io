@@ -314,25 +314,6 @@
     <a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">1</span></a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-schedule">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/schedule" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
 
       
       
@@ -401,9 +382,6 @@
             
 
     
-    
-      
-      
     
       
       
@@ -596,6 +574,11 @@
           
           
 
+          <!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+  <div class="widget" id="CloudCalendar"></div>
+</div>
+
           
             
           
@@ -620,7 +603,7 @@
       <div class="footer-inner">
         <div class="copyright">&copy; 1970 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">badwolflord</span>
 
@@ -1222,6 +1205,29 @@
 
 
   
+
+  <!-- calendar widget -->
+
+
+    <script src="/lib/CloudCalendar/CloudCalendar.js"></script>
+    <script src="/lib/CloudCalendar/languages.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN', 
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
 
 </body>
 </html>
